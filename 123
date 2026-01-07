@@ -1,0 +1,355 @@
+PS C:\Users\neo\Desktop\collab1> git clone https://github.com/Sudharsana-V/collab.git
+Cloning into 'collab'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (6/6), done.
+PS C:\Users\neo\Desktop\collab1> git branch kaniga
+fatal: not a valid object name: 'master'
+PS C:\Users\neo\Desktop\collab1> cd collab
+PS C:\Users\neo\Desktop\collab1\collab> git branch kaniga
+PS C:\Users\neo\Desktop\collab1\collab> git checkout kaniga
+Switched to branch 'kaniga'
+PS C:\Users\neo\Desktop\collab1\collab> git add kaniga.txt 
+fatal: pathspec 'kaniga.txt' did not match any files
+PS C:\Users\neo\Desktop\collab1\collab> git checkout kaniga
+Already on 'kaniga'
+PS C:\Users\neo\Desktop\collab1\collab> git add kaniga.txt
+PS C:\Users\neo\Desktop\collab1\collab> git commit -m "msg"
+[kaniga 389554d] msg
+ 1 file changed, 1 insertion(+)
+ create mode 100644 kaniga.txt
+PS C:\Users\neo\Desktop\collab1\collab> git push -u origin kaniga
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 310 bytes | 310.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'kaniga' on GitHub by visiting:
+remote:      https://github.com/Sudharsana-V/collab/pull/new/kaniga
+remote:
+To https://github.com/Sudharsana-V/collab.git
+ * [new branch]      kaniga -> kaniga
+branch 'kaniga' set up to track 'origin/kaniga'.
+PS C:\Users\neo\Desktop\collab1\collab> git checkout prem   
+error: pathspec 'prem' did not match any file(s) known to git
+PS C:\Users\neo\Desktop\collab1\collab> git branch     
+* kaniga
+  main
+PS C:\Users\neo\Desktop\collab1\collab> git branch -a
+* kaniga
+  main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/kaniga
+  remotes/origin/main
+PS C:\Users\neo\Desktop\collab1\collab> git branch main
+fatal: a branch named 'main' already exists
+PS C:\Users\neo\Desktop\collab1\collab> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\neo\Desktop\collab1\collab> git branch -a
+  kaniga
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/kaniga
+  remotes/origin/main
+PS C:\Users\neo\Desktop\collab1\collab> git branch
+  kaniga
+* main
+PS C:\Users\neo\Desktop\collab1\collab> git branch -a
+  kaniga
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/kaniga
+  remotes/origin/main
+PS C:\Users\neo\Desktop\collab1\collab> git pull
+remote: Enumerating objects: 17, done.
+remote: Counting objects: 100% (17/17), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 15 (delta 3), reused 9 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (15/15), 2.80 KiB | 110.00 KiB/s, done.
+From https://github.com/Sudharsana-V/collab
+   d0dbb0c..3086982  main       -> origin/main
+ * [new branch]      keer       -> origin/keer
+ * [new branch]      prem       -> origin/prem
+ * [new branch]      sudharsana -> origin/sudharsana
+Updating d0dbb0c..3086982
+Fast-forward
+ kaniga.txt | 1 +
+ sudh.txt   | 1 +
+ 2 files changed, 2 insertions(+)
+ create mode 100644 kaniga.txt
+ create mode 100644 sudh.txt
+PS C:\Users\neo\Desktop\collab1\collab> git checkout prem
+branch 'prem' set up to track 'origin/prem'.
+Switched to a new branch 'prem'
+PS C:\Users\neo\Desktop\collab1\collab> git add prem.txt
+fatal: pathspec 'prem.txt' did not match any files
+PS C:\Users\neo\Desktop\collab1\collab> git add new.txt 
+PS C:\Users\neo\Desktop\collab1\collab> git commit -m "msg"
+[prem eb78465] msg
+ 1 file changed, 3 insertions(+)
+ create mode 100644 new.txt
+PS C:\Users\neo\Desktop\collab1\collab> git push -u origin prem
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 348 bytes | 348.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Sudharsana-V/collab.git
+   b3639dc..eb78465  prem -> prem
+branch 'prem' set up to track 'origin/prem'.
+PS C:\Users\neo\Desktop\collab1\collab> bran
+bran : The term 'bran' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and 
+try again.
+At line:1 char:1
++ bran
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (bran:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\neo\Desktop\collab1\collab> 
+PS C:\Users\neo\Desktop\collab1\collab> git add new.txt        
+PS C:\Users\neo\Desktop\collab1\collab> git commit -m "msg"    
+[prem d6b68b5] msg
+ 1 file changed, 38 insertions(+), 1 deletion(-)
+PS C:\Users\neo\Desktop\collab1\collab> git push -u origin prem
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 291 bytes | 145.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Sudharsana-V/collab.git
+   eb78465..d6b68b5  prem -> prem
+branch 'prem' set up to track 'origin/prem'.
+PS C:\Users\neo\Desktop\collab1\collab> git pull
+remote: Enumerating objects: 18, done.
+remote: Counting objects: 100% (18/18), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 13 (delta 5), reused 8 (delta 3), pack-reused 0 (from 0)
+Unpacking objects: 100% (13/13), 3.53 KiB | 171.00 KiB/s, done.
+From https://github.com/Sudharsana-V/collab
+   d6b68b5..1a251eb  prem       -> origin/prem
+   3086982..689a427  main       -> origin/main
+Updating d6b68b5..1a251eb
+Fast-forward
+ k.py | 7 +++++++
+ 1 file changed, 7 insertions(+)
+ create mode 100644 k.py
+PS C:\Users\neo\Desktop\collab1\collab> git add new.txt        
+PS C:\Users\neo\Desktop\collab1\collab> git commit -m "msg"    
+On branch prem
+Your branch is up to date with 'origin/prem'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    new.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\neo\Desktop\collab1\collab> git branch
+  kaniga
+  main
+* prem
+PS C:\Users\neo\Desktop\collab1\collab> git add new.txt    
+PS C:\Users\neo\Desktop\collab1\collab> git commit -m "msg"
+On branch prem
+Your branch is up to date with 'origin/prem'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    new.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\neo\Desktop\collab1\collab> git checkout kaniga 
+Switched to branch 'kaniga'
+Your branch is up to date with 'origin/kaniga'.
+PS C:\Users\neo\Desktop\collab1\collab> git add new.txt    
+fatal: pathspec 'new.txt' did not match any files
+PS C:\Users\neo\Desktop\collab1\collab> git commit -m "msg"
+On branch kaniga
+Your branch is up to date with 'origin/kaniga'.
+
+nothing to commit, working tree clean
+PS C:\Users\neo\Desktop\collab1\collab> git push -u origin prem
+branch 'prem' set up to track 'origin/prem'.
+Everything up-to-date
+PS C:\Users\neo\Desktop\collab1\collab> git push
+Everything up-to-date
+PS C:\Users\neo\Desktop\collab1\collab> git add new.txt        
+PS C:\Users\neo\Desktop\collab1\collab> git commit -m "msg"    
+[kaniga 1c0b272] msg
+ 1 file changed, 38 insertions(+)
+ create mode 100644 new.txt
+PS C:\Users\neo\Desktop\collab1\collab> git push -u origin prem
+branch 'prem' set up to track 'origin/prem'.
+Everything up-to-date
+PS C:\Users\neo\Desktop\collab1\collab> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 412 bytes | 206.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Sudharsana-V/collab.git
+   389554d..1c0b272  kaniga -> kaniga
+PS C:\Users\neo\Desktop\collab1\collab> git branch
+* kaniga
+  main
+  prem
+PS C:\Users\neo\Desktop\collab1\collab> git checkout prem
+Switched to branch 'prem'
+Your branch is up to date with 'origin/prem'.
+PS C:\Users\neo\Desktop\collab1\collab> git branch
+  kaniga
+  main
+* prem
+PS C:\Users\neo\Desktop\collab1\collab> git add new.txt
+PS C:\Users\neo\Desktop\collab1\collab> git commit -m "msg"
+[prem fa6f3ed] msg
+ 1 file changed, 1 insertion(+), 40 deletions(-)
+PS C:\Users\neo\Desktop\collab1\collab> git push -u origin prem
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 252 bytes | 252.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Sudharsana-V/collab.git
+   1a251eb..fa6f3ed  prem -> prem
+branch 'prem' set up to track 'origin/prem'.
+PS C:\Users\neo\Desktop\collab1\collab> git push
+Everything up-to-date
+PS C:\Users\neo\Desktop\collab1\collab> git branch main
+fatal: a branch named 'main' already exists
+PS C:\Users\neo\Desktop\collab1\collab> git checkout main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 8 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+PS C:\Users\neo\Desktop\collab1\collab> git checkout prem
+Switched to branch 'prem'
+Your branch is up to date with 'origin/prem'.
+PS C:\Users\neo\Desktop\collab1\collab> git add new.py
+PS C:\Users\neo\Desktop\collab1\collab> git pull
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 2), reused 6 (delta 2), pack-reused 0 (from 0)
+Unpacking objects: 100% (6/6), 590 bytes | 59.00 KiB/s, done.
+From https://github.com/Sudharsana-V/collab
+   1c0b272..7fad2cf  kaniga     -> origin/kaniga
+Already up to date.
+PS C:\Users\neo\Desktop\collab1\collab> git commit -m "msg"
+[prem 1743bf9] msg
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\neo\Desktop\collab1\collab> git push -u origin prem
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 296 bytes | 296.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Sudharsana-V/collab.git
+   fa6f3ed..1743bf9  prem -> prem
+branch 'prem' set up to track 'origin/prem'.
+PS C:\Users\neo\Desktop\collab1\collab> git push
+Everything up-to-date
+PS C:\Users\neo\Desktop\collab1\collab> git push -u origin main
+To https://github.com/Sudharsana-V/collab.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Sudharsana-V/collab.git'
+hint: Updates were rejected because a pushed branch tip is behind its remote
+hint: counterpart. If you want to integrate the remote changes, use 'git pull'
+hint: before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\neo\Desktop\collab1\collab> git checkout main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 8 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+PS C:\Users\neo\Desktop\collab1\collab> git push
+To https://github.com/Sudharsana-V/collab.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Sudharsana-V/collab.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\neo\Desktop\collab1\collab> git push -u origin main
+To https://github.com/Sudharsana-V/collab.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Sudharsana-V/collab.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\neo\Desktop\collab1\collab> git pull
+Updating 3086982..689a427
+Fast-forward
+ guess.txt  | 1 +
+ k.py       | 7 +++++++
+ kaniga.txt | 3 ++-
+ new.py     | 1 +
+ 4 files changed, 11 insertions(+), 1 deletion(-)
+ create mode 100644 guess.txt
+ create mode 100644 k.py
+ create mode 100644 new.py
+PS C:\Users\neo\Desktop\collab1\collab> git push -u origin main
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+PS C:\Users\neo\Desktop\collab1\collab> git add new.py
+PS C:\Users\neo\Desktop\collab1\collab> git commit -m "msg"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\neo\Desktop\collab1\collab> git push -u origin main
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+PS C:\Users\neo\Desktop\collab1\collab> git add new.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
